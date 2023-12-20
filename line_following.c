@@ -12,10 +12,12 @@ void user_main(void) {
     
     int shikii = 300;
 
+    int i;
+
     while (TRUE) {
         //配列にすべて代入してループの中でセンサーの値が変わるのを防ぐ
         //gAD[CN2] と gAD[1]は同じ
-        for (int i = 2; i < 9; i++) {
+        for (i = 2; i < 9; i++) {
             current_sensor_values[i] = gAD[i];
         }
         
